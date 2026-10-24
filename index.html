@@ -1,30 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'">
-<meta name="referrer" content="no-referrer">
-<title>Biolytica – The Life Science Society, Maitreyi College</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Biolytica — The Life Sciences Society of Maitreyi College, University of Delhi.">
+  <title>Biolytica | The Life Sciences Society</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <a class="brand" href="#top">Biolytica</a>
-  <nav>
-    <a href="#about">About</a><a href="#teams">Teams</a><a href="#bearers">Team</a>
-    <a href="#trinity">Trinity</a><a href="#contact">Contact</a>
-  </nav>
-</header>
-<main id="top">
-  <section class="hero"><h1 id="name"></h1><p id="tagline"></p><a class="btn" href="#contact">Get in touch</a></section>
-  <section id="about"><h2>About Us</h2><p id="about-text"></p><h3>What support do we offer?</h3><p id="support-text"></p></section>
-  <section id="teams"><h2>How We Are Organized</h2><ul class="chips" id="teams-list"></ul></section>
-  <section id="bearers"><h2>Office Bearers</h2><div class="grid" id="bearers-list"></div></section>
-  <section id="trinity"><h2 id="trinity-title"></h2><p id="trinity-text"></p><ul id="trinity-points"></ul></section>
-  <section id="contact"><h2>Contact Us</h2><div id="contact-list" class="links"></div></section>
-</main>
-<footer><p id="footer"></p></footer>
-<script src="script.js"></script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Biolytica home">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span><strong>BIOLYTICA</strong><small>The Life Sciences Society</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" class="nav">
+      <a href="#about">About</a><a href="#events">Events</a><a href="#team">Our Team</a>
+      <a href="#gallery">Gallery</a><a href="#notices">Notices</a>
+      <a class="nav-join" href="#join">Join Us ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> MAITREYI COLLEGE · UNIVERSITY OF DELHI</p>
+        <h1>Exploring life.<br><em>Advancing science.</em></h1>
+        <p class="hero-intro">A student community driven by scientific curiosity, biological discovery and a deeper understanding of the living world.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#events">Explore activities <span>↗</span></a>
+          <a class="text-link" href="#about">Discover Biolytica <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Curiosity is where discovery begins.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative botanical illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="molecule m-one">●<i>—</i>●<i>—</i>●</div>
+        <div class="molecule m-two">●<i>—</i>●</div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div>
+        <div class="art-caption"><span>01 / LIFE SCIENCES</span><span>Observe · Question · Discover</span></div>
+      </div>
+      <div class="hero-bottom"><span>STUDENT-LED · SCIENCE-FOCUSED</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div class="section-kicker">01 — WHO WE ARE</div>
+      <div class="intro-content">
+        <h2>Science connects<br>us to <em>life itself.</em></h2>
+        <div><p class="lead">Biolytica is the Life Sciences Society of Maitreyi College, University of Delhi.</p>
+        <p>This website is a space to share the society’s activities, celebrate student curiosity and keep the community informed about opportunities to learn, collaborate and explore life sciences.</p>
+        <p class="placeholder-note">Replace this introductory text with the society’s approved official description.</p></div>
+      </div>
+      <div class="principles">
+        <article><span>01</span><h3>Explore</h3><p>Encourage questions and curiosity about the living world.</p></article>
+        <article><span>02</span><h3>Learn</h3><p>Create opportunities for scientific learning and discussion.</p></article>
+        <article><span>03</span><h3>Connect</h3><p>Bring students together through shared interests and activities.</p></article>
+      </div>
+    </section>
+
+    <section class="events section-wrap tinted" id="events">
+      <div class="section-heading"><div><div class="section-kicker">02 — WHAT WE DO</div><h2>Events & <em>activities</em></h2></div><p>Talks, workshops, conversations and experiences that bring science to life.</p></div>
+      <div class="card-grid" id="eventGrid">
+        <article class="event-card"><div class="card-image image-lab"><span>EVENT</span><b>✳</b></div><div class="card-body"><div class="card-meta"><span>UPCOMING / PAST EVENT</span><span>01</span></div><h3>Event title goes here</h3><p>Add the event date, venue and a short description after details are confirmed.</p><a href="#join" class="inline-link">Event details <span>↗</span></a></div></article>
+        <article class="event-card"><div class="card-image image-leaf"><span>WORKSHOP</span><b>❋</b></div><div class="card-body"><div class="card-meta"><span>DATE TO BE ADDED</span><span>02</span></div><h3>Workshop or seminar</h3><p>Share a summary of the activity and add a registration link if applicable.</p><a href="#join" class="inline-link">Learn more <span>↗</span></a></div></article>
+        <article class="event-card"><div class="card-image image-cells"><span>ACTIVITY</span><b>◉</b></div><div class="card-body"><div class="card-meta"><span>DATE TO BE ADDED</span><span>03</span></div><h3>Student-led initiative</h3><p>Highlight a verified society initiative, awareness activity or student project.</p><a href="#about" class="inline-link">About the society <span>↗</span></a></div></article>
+      </div>
+      <p class="section-footnote">The cards above are placeholders. Replace them with verified event information before publishing.</p>
+    </section>
+
+    <section class="team section-wrap" id="team">
+      <div class="section-heading"><div><div class="section-kicker">03 — THE PEOPLE</div><h2>Meet the <em>team</em></h2></div><p>Students working together to create a welcoming and curious scientific community.</p></div>
+      <div class="team-grid">
+        <article class="person"><div class="avatar avatar-a">+</div><div><span class="person-role">PRESIDENT</span><h3>Name to be added</h3><p>Designation / Department</p></div></article>
+        <article class="person"><div class="avatar avatar-b">✳</div><div><span class="person-role">VICE PRESIDENT</span><h3>Name to be added</h3><p>Designation / Department</p></div></article>
+        <article class="person"><div class="avatar avatar-c">◌</div><div><span class="person-role">SECRETARY</span><h3>Name to be added</h3><p>Designation / Department</p></div></article>
+        <article class="person"><div class="avatar avatar-d">✦</div><div><span class="person-role">TEAM MEMBER</span><h3>Name to be added</h3><p>Designation / Department</p></div></article>
+      </div>
+      <p class="section-footnote">Names, designations, photographs and faculty details must be confirmed and approved by the society.</p>
+    </section>
+
+    <section class="gallery section-wrap tinted" id="gallery">
+      <div class="section-heading"><div><div class="section-kicker">04 — MOMENTS & MEMORIES</div><h2>Life at <em>Biolytica</em></h2></div><p>A visual record of learning, collaboration and activities across the academic year.</p></div>
+      <div class="gallery-grid">
+        <div class="gallery-tile gallery-one"><span>01 / FIELD & NATURE</span><b>Observe closely.</b></div>
+        <div class="gallery-tile gallery-two"><span>02 / SCIENCE & DISCOVERY</span><b>Ask better questions.</b></div>
+        <div class="gallery-tile gallery-three"><span>03 / COMMUNITY</span><b>Learn together.</b></div>
+      </div>
+      <p class="section-footnote">Decorative placeholders only. Replace with approved society photographs and captions.</p>
+    </section>
+
+    <section class="notices section-wrap" id="notices">
+      <div class="section-heading"><div><div class="section-kicker">05 — STAY INFORMED</div><h2>Notices & <em>updates</em></h2></div><p>Important announcements, calls for participation and society updates.</p></div>
+      <div class="notice-list">
+        <article><div class="notice-date">NOTICE <span>01</span></div><div><h3>Updates will appear here</h3><p>Add an approved notice, publication date and relevant link.</p></div><span class="notice-arrow">↗</span></article>
+        <article><div class="notice-date">NOTICE <span>02</span></div><div><h3>Upcoming opportunities</h3><p>Share confirmed deadlines, event information and participation details.</p></div><span class="notice-arrow">↗</span></article>
+      </div>
+      <p class="section-footnote">Do not use this page as an official college notice board unless authorised.</p>
+    </section>
+
+    <section class="join" id="join">
+      <div class="join-pattern" aria-hidden="true">✳</div>
+      <div class="section-kicker">06 — BE PART OF THE COMMUNITY</div>
+      <h2>Curiosity grows<br><em>when shared.</em></h2>
+      <p>Interested in life sciences, learning and student-led activities? Find out how to connect with Biolytica.</p>
+      <a class="button button-dark" id="joinButton" href="https://forms.google.com/" target="_blank" rel="noopener">Membership form <span>↗</span></a>
+      <p class="join-hint">Replace the sample link with the society’s approved registration form.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✳</span><span><strong>BIOLYTICA</strong><small>The Life Sciences Society</small></span></a>
+    <div class="footer-info"><span>Maitreyi College</span><span>University of Delhi</span></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Biolytica · Society website</span><span>Independent student society website. Official affiliation and branding should be confirmed before publication.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
