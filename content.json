@@ -1,0 +1,25 @@
+{
+  "name": "Biolytica",
+  "tagline": "The Life Science Society, Maitreyi College, University of Delhi",
+  "about": "Biolytica is the vibrant Life Science Society at Maitreyi College that empowers you to showcase your passion and talent across various fields, from academics and research to culture and creativity. More than just a club, it is a supportive community where every student can find their place.",
+  "support": "Have doubts about coursework, lab trouble, or campus hassles? Approach any Biolytica member. We are here to help you get your issues resolved quickly and efficiently.",
+  "teams": ["Content Team","Creative Team","Cultural Team","Graphics Team","Public Relations Team","Social Media Team"],
+  "bearers": [
+    {"role":"President","name":"Simran Raghuwanshi","photo":""},
+    {"role":"Vice-President","name":"Pakhi Verma","photo":""},
+    {"role":"General Secretary","name":"Nashra Akhtar","photo":""},
+    {"role":"Treasurer","name":"Priya","photo":""}
+  ],
+  "trinity": {
+    "title": "Signature Event: Trinity",
+    "text": "Trinity is our annual departmental fest, a day full of fun, food, learning and unforgettable memories.",
+    "points": ["Academic games and quizzes","Cultural performances from music to dance","Delicious food stalls and more"]
+  },
+  "contact": {
+    "instagram": "https://www.instagram.com/biolyticamaitreyi/",
+    "linkedin": "",
+    "whatsapp": "",
+    "email": "biolyticamaitreyi2024@gmail.com"
+  },
+  "footer": "© Biolytica, Maitreyi College, University of Delhi"
+}

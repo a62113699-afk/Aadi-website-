@@ -1,0 +1,24 @@
+:root{--bg:#faf6ec;--card:#fff;--ink:#3d2a20;--brand:#6f4a3a;--accent:#c99a82;--sage:#94b0a8}
+@media (prefers-color-scheme:dark){:root{--bg:#1f1a17;--card:#2b2420;--ink:#f1e8dc;--brand:#e0b9a4;--accent:#c99a82;--sage:#5f7f77}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding:.7rem 1rem;background:var(--card);border-bottom:2px solid var(--accent)}
+.brand{font-weight:800;font-size:1.3rem;color:var(--brand);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:.3rem 1rem}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:.3rem 0}
+nav a:hover{color:var(--brand)}
+section{max-width:960px;margin:0 auto;padding:2.5rem 1rem}
+h1{font-size:clamp(2rem,7vw,3.6rem);margin:0;color:var(--brand)}
+h2{color:var(--brand);border-bottom:3px solid var(--accent);display:inline-block;padding-bottom:.2rem}
+.hero{text-align:center;padding:4rem 1rem}
+.btn{display:inline-block;margin-top:1rem;padding:.7rem 1.4rem;background:var(--brand);color:var(--bg);border-radius:999px;text-decoration:none;font-weight:700}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.chips li{background:var(--sage);color:#fff;padding:.5rem 1rem;border-radius:999px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.card{background:var(--card);border-radius:14px;padding:1.2rem;text-align:center;border:1px solid var(--accent)}
+.card .role{color:var(--brand);font-weight:700}
+.card .avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;background:var(--accent);margin:0 auto .6rem;display:block}
+.links{display:flex;flex-direction:column;gap:.6rem}
+.links a{color:var(--brand);font-weight:700;word-break:break-all}
+footer{text-align:center;padding:1.5rem;font-size:.9rem;opacity:.8}
